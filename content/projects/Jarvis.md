@@ -1,6 +1,6 @@
 ---
 date: '2017-08-01'
-title: 'Interventions'
+title: 'Jarvis'
 github: ''
 external: 'https://interventions.design/'
 tech:
