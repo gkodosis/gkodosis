@@ -10,7 +10,7 @@ module.exports = {
   googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
   name: 'George Kontosis',
   location: 'Athens, Greece',
-  email: 'George.Kontosis@gmail.com',
+  email: 'geo_kont@live.com',
   github: 'https://github.com/gkodosis',
   twitterHandle: '@georgekodosis',
   socialMedia: [
@@ -21,14 +21,6 @@ module.exports = {
     {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/gkodosis',
-    },
-    {
-      name: 'Stack-Overflow',
-      url: 'https://stackoverflow.com/users/9856413/gkodosis',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/georgekodosis',
     },
   ],
 
