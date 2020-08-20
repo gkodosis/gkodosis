@@ -1,8 +1,8 @@
 import { hex2rgba } from '@utils';
 
 const ACCENT = '#0ff0fc';
-const DARK_BG = '#1b2742';
-const BG = '#1b2742';
+const DARK_BG = '#232529';
+const BG = '#232529';
 
 const theme = {
   colors: {
