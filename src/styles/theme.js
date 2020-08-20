@@ -13,7 +13,7 @@ const theme = {
     slate: '#8892b0',
     lightSlate: '#a8b2d1',
     lightestSlate: '#ccd6f6',
-    white: '#e6f1ff',
+    white: '#f5f6f8',
     green: ACCENT,
     transGreen: hex2rgba(ACCENT, 0.07),
     shadowNavy: hex2rgba(DARK_BG, 0.7),
