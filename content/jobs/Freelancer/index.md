@@ -1,9 +1,11 @@
 ---
-date: '2017-12-21'
-title: 'Private Tutor'
+date: '2018-03-01'
+title: 'Web Designer'
 company: 'Freelancer'
 location: 'Athens, Greece'
-range: 'May - September 2019'
+range: 'March - May 2018'
+url: 'http://skourasdent.gr'
 ---
 
-- As a distinct student at Information Systems Implementation and Architecture, one of the most demanding courses of my department, I was recommended to tutor a fellow student.
+- Hired during Panorama of Entrepreneurship and Innovation, while being a volunteer, as a junior web developer 
+- Claimed administration rights and re-designed a dentist's website (currently unmaintained)

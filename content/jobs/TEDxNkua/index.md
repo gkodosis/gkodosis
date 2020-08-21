@@ -1,5 +1,5 @@
 ---
-date: '2018-04-01'
+date: '2018-09-01'
 title: 'Team Leader & Software Engineer'
 company: 'TEDxNkua'
 location: 'Athens, Greece'
