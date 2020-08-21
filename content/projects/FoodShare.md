@@ -1,7 +1,7 @@
 ---
-date: '2020-03-27'
+date: '2018-10-01'
 title: 'FoodShare'
-github: 'https://github.com/gkodosis/foodshare'
+github: 'https://github.com/iasonasbakas/foodshare'
 external: 'https://foodshare.gr'
 tech:
   - Django

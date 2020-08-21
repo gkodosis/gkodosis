@@ -1,15 +1,14 @@
 ---
-date: '2019-11-12'
+date: '2018-01-10'
 title: 'TravelShare'
-github: ''
-external: 'https://medium.com/stories-from-upstatement/building-a-headless-mobile-app-cms-from-scratch-bab2d17744d9'
+github: 'https://github.com/gkodosis/travelshare'
 tech:
-  - Node
-  - Express
-  - Firebase
-  - Vue
-company: 'Upstatement'
+  - Java
+  - JSP
+  - SQL
+  - HTML & CSS
+  - Javascript
 showInProjects: true
 ---
 
-Find out how we built a custom headless CMS with Node, Express, and Firebase for a project at Upstatement
+A web platform connecting travelers to exchange items, build with Java and JSP.

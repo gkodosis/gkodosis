@@ -1,5 +1,5 @@
 ---
-date: '2019-04-1'
+date: '2019-04-01'
 title: 'BI Analyst'
 company: 'Vodafone'
 location: 'Athens, Greece'

@@ -1,5 +1,5 @@
 ---
-date: '2018-12-18'
+date: '2018-09-01'
 title: 'TEDxNkua'
 external: 'https://tedxnkua.com'
 tech:

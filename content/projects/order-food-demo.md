@@ -1,14 +1,10 @@
 ---
-date: '2020-03-27'
+date: '2019-05-01'
 title: 'order-food-demo'
-github: 'https://github.com/gkodosis/foodshare'
-external: 'https://foodshare.gr'
+github: 'https://github.com/gkodosis/order-food-demo'
 tech:
-  - Django
-  - Angular7
-  - Node.js
-company: 'FoodShare'
+  - Java
 showInProjects: true
 ---
 
-Initiated the idea and coded a ready-to-launch platform within 2 months. Started building the platform with React as front-end and Django as back-end, then transformed the front-end with Angular7.
+A Java assignment resulting in a food ordering demo application.

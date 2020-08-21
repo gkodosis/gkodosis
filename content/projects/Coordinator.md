@@ -1,12 +1,13 @@
 ---
-date: '2018-12-29'
+date: '2018-05-01'
 title: 'Coordinator'
-github: 'https://github.com/bchiang7/google-keep-vue-firebase'
-external: 'https://keep-vue.netlify.com/'
+github: 'https://github.com/gkodosis/coordinator'
+external: 'https://spotify.github.io/coordinator/'
 tech:
-  - Vue
-  - Firebase
+  - Svelte
+  - JavaScript
+  - HTML & CSS
 showInProjects: true
 ---
 
-A simple Google Keep clone built with Vue and Firebase.
+A visual interface for turning an SVG into XY coördinates. Contributed by adding a new feature: converting text to SVG.

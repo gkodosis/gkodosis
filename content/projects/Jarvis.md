@@ -1,14 +1,12 @@
 ---
-date: '2017-08-01'
+date: '2020-04-01'
 title: 'Jarvis'
-github: ''
-external: 'https://interventions.design/'
+github: 'https://github.com/gkodosis/Jarvis'
 tech:
-  - Jekyll
-  - SCSS
-  - JS
-company: 'Scout'
+  - Python
+  - Linux
+  - Windows 
 showInProjects: true
 ---
 
-Interactive marketing website for Northeastern's first annual student-led design conference, Interventions.
+Jarvis is a simple personal assistant for Linux, MacOS and Windows which works on the command line. Contributed by enabling the command history, enhancing the user's experience.

@@ -1,15 +1,12 @@
 ---
-date: '2017-12-27'
-title: 'Halcyon Theme'
-github: 'https://github.com/bchiang7/halcyon-site'
-external: 'https://halcyon-theme.netlify.com/'
+date: '2017-06-01'
+title: 'thefuck'
+github: 'https://github.com/gkodosis/thefuck'
 tech:
-  - VS Code
-  - Sublime Text
-  - Atom
-  - iTerm2
-  - Hyper
+  - Python
 showInProjects: true
 ---
 
-A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode), [Package Control](https://packagecontrol.io/packages/Halcyon%20Theme), [Atom Package Manager](https://atom.io/themes/halcyon-syntax), and [npm](https://www.npmjs.com/package/hyper-halcyon-theme).
+The Fuck is a magnificent app, inspired by a [@liamosaur tweet](https://twitter.com/liamosaur/status/506975850596536320), that corrects errors in previous console commands. Contributed by adding and editing new rules in order to catch and fix errors when typing specific commands. 
+
+

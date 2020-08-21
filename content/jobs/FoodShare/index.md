@@ -1,5 +1,5 @@
 ---
-date: '2018-10-1'
+date: '2018-10-01'
 title: 'Founder & Web Developer'
 company: 'FoodShare'
 location: 'Athens, Greece'
