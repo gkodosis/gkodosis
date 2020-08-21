@@ -101,6 +101,12 @@ const Footer = () => {
         </StyledSocialList>
       </StyledSocial>
       <StyledMetadata tabindex="-1">
+        <StyledGitHubLink
+          href="https://github.com/bchiang7/v4"
+          target="_blank"
+          rel="nofollow noopener noreferrer">
+          <div>Credits to @bchiang7</div>
+        </StyledGitHubLink>
       </StyledMetadata>
     </StyledContainer>
   );
