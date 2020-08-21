@@ -43,9 +43,9 @@ const Head = ({ metadata }) => (
     <meta name="twitter:image" content={`${config.siteUrl}${ogImage}`} />
     <meta name="twitter:image:alt" content={metadata.title} />
 
-    <link rel="apple-touch-icon" href={appleIcon} />
-    <link rel="icon" type="image/png" href={androidIcon} />
-    <link rel="icon" type="image/png" href={favicon} />
+    <link rel="apple-touch-icon" sizes="" href={appleIcon} />
+    <link rel="icon" type="image/png" sizes="" href={androidIcon} />
+    <link rel="icon" type="image/png" sizes="" href={favicon} />
     <meta name="msapplication-TileColor" content={config.colors.navy} />
     <meta name="msapplication-TileImage" content={msIcon} />
     <meta name="theme-color" content={config.colors.navy} />
