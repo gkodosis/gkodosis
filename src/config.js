@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'George Kontosis | Software Engineer',
   siteDescription:
-    'George Kontosis is a software engineer based in Boston, MA who specializes in building (and occasionally designing) exceptional websites, applications, and everything in between.',
+    'George Kontosis is a software engineer based in Athens, Greece who specializes in building (and occasionally designing) exceptional websites, applications, and everything in between.',
   siteKeywords:
     'George Kontosis, George, Kontosis, gkodosis, software engineer, front-end engineer, web developer, javascript, northeastern',
   siteUrl: 'https://GeorgeKontosis.com',
