@@ -1,11 +1,15 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
-
 const path = require('path');
 const _ = require('lodash');
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  createTypes(`
+    type MarkdownRemarkFrontmatter implements Node {
+      slug: String
+      tags: [String]
+    }
+  `);
+};
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
@@ -44,13 +48,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   // Create post detail pages
   const posts = result.data.postsRemark.edges;
 
-  posts.forEach(({ node }) => {
-    createPage({
-      path: node.frontmatter.slug,
-      component: postTemplate,
-      context: {},
-    });
+posts.forEach(({ node }) => {
+  createPage({
+    path: node.frontmatter.slug,  // this is the correct value to use
+    component: postTemplate,
+    context: {
+      slug: node.frontmatter.slug,  // pass slug instead of path
+    },
   });
+});
 
   // Extract tag data from query
   const tags = result.data.tagsGroup.group;
