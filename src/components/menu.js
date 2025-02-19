@@ -91,6 +91,16 @@ const Menu = ({ menuOpen, toggleMenu }) => {
     }
   };
 
+  const handleResumeClick = e => {
+    e.preventDefault();
+    const password = window.prompt("Please enter the password to access the resume:");
+    if (password === "secret") {  // Replace "secret" with your desired password.
+      window.open("/resume.pdf", "_blank", "noopener,noreferrer");
+    } else {
+      alert("Incorrect password. Access denied.");
+    }
+  };
+
   return (
     <StyledContainer
       menuOpen={menuOpen}
@@ -107,7 +117,11 @@ const Menu = ({ menuOpen, toggleMenu }) => {
                 </NavListItem>
               ))}
           </NavList>
-          <ResumeLink href="/resume.pdf" target="_blank" rel="nofollow noopener noreferrer">
+          <ResumeLink
+            href="/resume.pdf"
+            onClick={handleResumeClick}
+            target="_blank"
+            rel="nofollow noopener noreferrer">
             Resume
           </ResumeLink>
         </NavLinks>
