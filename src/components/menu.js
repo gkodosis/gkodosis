@@ -82,19 +82,19 @@ const ResumeLink = styled.a`
 
 const Menu = ({ menuOpen, toggleMenu }) => {
   const handleMenuClick = e => {
-    const target = e.target;
-    const isLink = target.hasAttribute('href');
-    const isNotMenu = target.classList && target.classList[0].includes('StyledContainer');
-
-    if (isLink || isNotMenu) {
+    // Only close menu if clicking on backdrop (StyledContainer)
+    if (e.target === e.currentTarget) {
       toggleMenu();
     }
   };
 
   const handleResumeClick = e => {
     e.preventDefault();
+    e.stopPropagation(); // Prevent event from bubbling to parent container
+    
     const password = window.prompt("Please enter the password to access the resume:");
-    if (password === "secret") {  // Replace "secret" with your desired password.
+    if (password === "secret") {  // Replace "secret" with your desired password
+      toggleMenu(); // Close menu before opening resume
       window.open("/resume.pdf", "_blank", "noopener,noreferrer");
     } else {
       alert("Incorrect password. Access denied.");
@@ -113,14 +113,13 @@ const Menu = ({ menuOpen, toggleMenu }) => {
             {navLinks &&
               navLinks.map(({ url, name }, i) => (
                 <NavListItem key={i}>
-                  <NavLink to={url}>{name}</NavLink>
+                  <NavLink to={url} onClick={toggleMenu}>{name}</NavLink>
                 </NavListItem>
               ))}
           </NavList>
           <ResumeLink
             href="/resume.pdf"
             onClick={handleResumeClick}
-            target="_blank"
             rel="nofollow noopener noreferrer">
             Resume
           </ResumeLink>
