@@ -81,25 +81,35 @@ const ResumeLink = styled.a`
 `;
 
 const Menu = ({ menuOpen, toggleMenu }) => {
+  const [isResumeClicked, setIsResumeClicked] = useState(false);
+
   const handleMenuClick = e => {
-    // Only close menu if clicking on backdrop (StyledContainer)
-    if (e.target === e.currentTarget) {
+    if (e.target === e.currentTarget && !isResumeClicked) {
       toggleMenu();
     }
   };
 
   const handleResumeClick = e => {
     e.preventDefault();
-    e.stopPropagation(); // Prevent event from bubbling to parent container
+    e.stopPropagation();
+    setIsResumeClicked(true);
     
     const password = window.prompt("Please enter the password to access the resume:");
-    if (password === "secret") {  // Replace "secret" with your desired password
-      toggleMenu(); // Close menu before opening resume
+    if (password === "secret") {
       window.open("/resume.pdf", "_blank", "noopener,noreferrer");
     } else {
       alert("Incorrect password. Access denied.");
     }
+    setIsResumeClicked(false);
   };
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'visible';
+    }
+  }, [menuOpen]);
 
   return (
     <StyledContainer
@@ -107,15 +117,14 @@ const Menu = ({ menuOpen, toggleMenu }) => {
       onClick={handleMenuClick}
       aria-hidden={!menuOpen}
       tabIndex={menuOpen ? 1 : -1}>
-      <Sidebar>
+      <Sidebar onClick={e => e.stopPropagation()}>
         <NavLinks>
           <NavList>
-            {navLinks &&
-              navLinks.map(({ url, name }, i) => (
-                <NavListItem key={i}>
-                  <NavLink to={url} onClick={toggleMenu}>{name}</NavLink>
-                </NavListItem>
-              ))}
+            {navLinks.map(({ url, name }, i) => (
+              <NavListItem key={i}>
+                <NavLink to={url} onClick={toggleMenu}>{name}</NavLink>
+              </NavListItem>
+            ))}
           </NavList>
           <ResumeLink
             href="/resume.pdf"
