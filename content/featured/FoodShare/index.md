@@ -3,7 +3,7 @@ date: '1'
 title: 'FoodShare'
 cover: './foodshare.png'
 github: 'https://github.com/gkodosis/foodshare'
-external: 'https://foodshare.gr'
+external: 'https://foodshare.gkodosis.com/'
 tech:
   - Angular7
   - Django

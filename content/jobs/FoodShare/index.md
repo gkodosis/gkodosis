@@ -4,7 +4,7 @@ title: 'Founder & Web Developer'
 company: 'FoodShare'
 location: 'Athens, Greece'
 range: 'October 2018 - September 2019'
-url: 'https://foodshare.gr'
+url: 'https://foodshare.gkodosis.com/'
 ---
 
 - Initialize the environment by creating a virtual machine and setting an Ubuntu Server hosted @Okeanos
