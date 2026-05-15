@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import { navLinks } from '@config';
@@ -81,26 +81,10 @@ const ResumeLink = styled.a`
 `;
 
 const Menu = ({ menuOpen, toggleMenu }) => {
-  const [isResumeClicked, setIsResumeClicked] = useState(false);
-
   const handleMenuClick = e => {
-    if (e.target === e.currentTarget && !isResumeClicked) {
+    if (e.target === e.currentTarget) {
       toggleMenu();
     }
-  };
-
-  const handleResumeClick = e => {
-    e.preventDefault();
-    e.stopPropagation();
-    setIsResumeClicked(true);
-    
-    const password = window.prompt("Please enter the password to access the resume:");
-    if (password === "secret") {
-      window.open("/resume.pdf", "_blank", "noopener,noreferrer");
-    } else {
-      alert("Incorrect password. Access denied.");
-    }
-    setIsResumeClicked(false);
   };
 
   useEffect(() => {
@@ -128,7 +112,7 @@ const Menu = ({ menuOpen, toggleMenu }) => {
           </NavList>
           <ResumeLink
             href="/resume.pdf"
-            onClick={handleResumeClick}
+            target="_blank"
             rel="nofollow noopener noreferrer">
             Resume
           </ResumeLink>
